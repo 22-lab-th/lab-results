@@ -1,0 +1,1826 @@
+{
+  "round2_qwen36_q5": {
+    "overall": {
+      "n": 120,
+      "passed": 99,
+      "accuracy_pct": 82.5,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 144,
+      "generation_tps": 16.199189861180116,
+      "prompt_tps": 396.5401594107556,
+      "median_wall_seconds": 14.777925249974942,
+      "cached_tokens": 0
+    },
+    "by_repeat": {
+      "1": {
+        "n": 40,
+        "passed": 33,
+        "accuracy_pct": 82.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 15.621721936331687,
+        "prompt_tps": 385.3446339570507,
+        "median_wall_seconds": 15.420491728989873,
+        "cached_tokens": 0
+      },
+      "2": {
+        "n": 40,
+        "passed": 33,
+        "accuracy_pct": 82.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 16.513303641451973,
+        "prompt_tps": 405.2673786014593,
+        "median_wall_seconds": 14.50050731250667,
+        "cached_tokens": 0
+      },
+      "3": {
+        "n": 40,
+        "passed": 33,
+        "accuracy_pct": 82.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 16.49517668251563,
+        "prompt_tps": 399.54425568896045,
+        "median_wall_seconds": 14.49999981300789,
+        "cached_tokens": 0
+      }
+    },
+    "by_category": {
+      "clarification": {
+        "n": 24,
+        "passed": 3,
+        "accuracy_pct": 12.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 16.552784086898253,
+        "prompt_tps": 398.2304519449453,
+        "median_wall_seconds": 11.524050978507148,
+        "cached_tokens": 0
+      },
+      "dependent": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 17.0023659185749,
+        "prompt_tps": 398.87601469954717,
+        "median_wall_seconds": 22.366993854520842,
+        "cached_tokens": 0
+      },
+      "nested": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 15.93189420420948,
+        "prompt_tps": 396.94621452430647,
+        "median_wall_seconds": 14.777925249974942,
+        "cached_tokens": 0
+      },
+      "parallel": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 15.948180707253801,
+        "prompt_tps": 408.57822075947894,
+        "median_wall_seconds": 21.47473879152676,
+        "cached_tokens": 0
+      },
+      "selection": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 16.020135135387005,
+        "prompt_tps": 378.5215129568426,
+        "median_wall_seconds": 10.902027271018596,
+        "cached_tokens": 0
+      }
+    },
+    "thai": {
+      "n": 30,
+      "passed": 24,
+      "accuracy_pct": 80.0,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 36,
+      "generation_tps": 16.215910019842045,
+      "prompt_tps": 393.8825301646054,
+      "median_wall_seconds": 14.991471437533619,
+      "cached_tokens": 0
+    },
+    "ram": {
+      "maximum resident set size_bytes": 20654112768,
+      "peak memory footprint_bytes": 1570995824,
+      "sampled_peak_rss_kib": 20170032
+    },
+    "failed": [
+      {
+        "task_id": "h33",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "USD"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h37",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "Alex",
+                      "address": {
+                        "street": "1 Main",
+                        "city": "York",
+                        "postal_code": "10001"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 1
+                      }
+                    ],
+                    "service": "economy"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "(ไม่มีหัวข้อ)",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": "10500"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "USD"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h37",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "Alex",
+                      "address": {
+                        "street": "1 Main",
+                        "city": "York",
+                        "postal_code": "10001"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 1
+                      }
+                    ],
+                    "service": "economy"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "(ไม่มีหัวข้อ)",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": "10500"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "USD"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h37",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "Alex",
+                      "address": {
+                        "street": "1 Main",
+                        "city": "York",
+                        "postal_code": "10001"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 1
+                      }
+                    ],
+                    "service": "economy"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "(ไม่มีหัวข้อ)",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": "10500"
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning_nonempty": 0,
+    "ended_at": "2026-10-30T16:54:09.034461+00:00"
+  },
+  "round2_qwen38_q8": {
+    "overall": {
+      "n": 120,
+      "passed": 111,
+      "accuracy_pct": 92.5,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 144,
+      "generation_tps": 13.684421255611607,
+      "prompt_tps": 374.49106235392946,
+      "median_wall_seconds": 15.983788749494124,
+      "cached_tokens": 0
+    },
+    "by_repeat": {
+      "1": {
+        "n": 40,
+        "passed": 37,
+        "accuracy_pct": 92.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 15.427952689731402,
+        "prompt_tps": 424.025684066072,
+        "median_wall_seconds": 13.948902812495362,
+        "cached_tokens": 0
+      },
+      "2": {
+        "n": 40,
+        "passed": 37,
+        "accuracy_pct": 92.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 13.116090276932614,
+        "prompt_tps": 359.3187391544688,
+        "median_wall_seconds": 17.334954395511886,
+        "cached_tokens": 0
+      },
+      "3": {
+        "n": 40,
+        "passed": 37,
+        "accuracy_pct": 92.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 12.793000183197332,
+        "prompt_tps": 348.49519804465604,
+        "median_wall_seconds": 17.737849458033452,
+        "cached_tokens": 0
+      }
+    },
+    "by_category": {
+      "clarification": {
+        "n": 24,
+        "passed": 15,
+        "accuracy_pct": 62.5,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 14.421854187710519,
+        "prompt_tps": 376.80065173491465,
+        "median_wall_seconds": 10.938252457999624,
+        "cached_tokens": 0
+      },
+      "dependent": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 14.391853347494116,
+        "prompt_tps": 376.1396331689288,
+        "median_wall_seconds": 24.51105685447692,
+        "cached_tokens": 0
+      },
+      "nested": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 13.47197882973456,
+        "prompt_tps": 374.3355860834508,
+        "median_wall_seconds": 15.983788749494124,
+        "cached_tokens": 0
+      },
+      "parallel": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 13.3548325879794,
+        "prompt_tps": 364.80857256192684,
+        "median_wall_seconds": 24.17682839598274,
+        "cached_tokens": 0
+      },
+      "selection": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 13.787429736781926,
+        "prompt_tps": 379.2644101007744,
+        "median_wall_seconds": 11.677075500017963,
+        "cached_tokens": 0
+      }
+    },
+    "thai": {
+      "n": 30,
+      "passed": 27,
+      "accuracy_pct": 90.0,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 36,
+      "generation_tps": 13.271462108050796,
+      "prompt_tps": 374.11460082783356,
+      "median_wall_seconds": 17.311748729029205,
+      "cached_tokens": 0
+    },
+    "ram": {
+      "maximum resident set size_bytes": 29998678016,
+      "peak memory footprint_bytes": 1575540696,
+      "sampled_peak_rss_kib": 29295584
+    },
+    "failed": [
+      {
+        "task_id": "h33",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "ยังไม่ได้กำหนดหัวข้อ",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "ยังไม่ได้กำหนดหัวข้อ",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_draft",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "ยังไม่ได้กำหนดหัวข้อ",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning_nonempty": 0,
+    "ended_at": "2026-10-30T16:21:35.699709+00:00"
+  },
+  "round2_saluki": {
+    "overall": {
+      "n": 120,
+      "passed": 102,
+      "accuracy_pct": 85.0,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 144,
+      "generation_tps": 24.545461968656554,
+      "prompt_tps": 440.36609653300957,
+      "median_wall_seconds": 11.721218041493557,
+      "cached_tokens": 0
+    },
+    "by_repeat": {
+      "1": {
+        "n": 40,
+        "passed": 34,
+        "accuracy_pct": 85.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 24.69134785352229,
+        "prompt_tps": 431.60143500735086,
+        "median_wall_seconds": 11.534950582979945,
+        "cached_tokens": 0
+      },
+      "2": {
+        "n": 40,
+        "passed": 34,
+        "accuracy_pct": 85.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 22.22340041168296,
+        "prompt_tps": 417.51330559865727,
+        "median_wall_seconds": 13.130987728975015,
+        "cached_tokens": 0
+      },
+      "3": {
+        "n": 40,
+        "passed": 34,
+        "accuracy_pct": 85.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 27.22973823719041,
+        "prompt_tps": 476.09347611086855,
+        "median_wall_seconds": 10.601873478997732,
+        "cached_tokens": 0
+      }
+    },
+    "by_category": {
+      "clarification": {
+        "n": 24,
+        "passed": 6,
+        "accuracy_pct": 25.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 25.294041768385686,
+        "prompt_tps": 421.23253673728794,
+        "median_wall_seconds": 9.421020417037653,
+        "cached_tokens": 0
+      },
+      "dependent": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 48,
+        "generation_tps": 25.210788158450782,
+        "prompt_tps": 423.98183028542724,
+        "median_wall_seconds": 18.367513457982568,
+        "cached_tokens": 0
+      },
+      "nested": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 25.800686474619344,
+        "prompt_tps": 477.5247493513838,
+        "median_wall_seconds": 10.50603995801066,
+        "cached_tokens": 0
+      },
+      "parallel": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 22.885620570261597,
+        "prompt_tps": 421.31277507473015,
+        "median_wall_seconds": 17.21669581203605,
+        "cached_tokens": 0
+      },
+      "selection": {
+        "n": 24,
+        "passed": 24,
+        "accuracy_pct": 100.0,
+        "format_slips": 0,
+        "infrastructure_errors": 0,
+        "stage_responses": 24,
+        "generation_tps": 28.874346787890225,
+        "prompt_tps": 485.1084016346476,
+        "median_wall_seconds": 8.247359229513677,
+        "cached_tokens": 0
+      }
+    },
+    "thai": {
+      "n": 30,
+      "passed": 24,
+      "accuracy_pct": 80.0,
+      "format_slips": 0,
+      "infrastructure_errors": 0,
+      "stage_responses": 36,
+      "generation_tps": 23.805961406414514,
+      "prompt_tps": 431.99677780555834,
+      "median_wall_seconds": 11.119528583512874,
+      "cached_tokens": 0
+    },
+    "ram": {
+      "maximum resident set size_bytes": 9251799040,
+      "peak memory footprint_bytes": 1563106792,
+      "sampled_peak_rss_kib": 9034944
+    },
+    "failed": [
+      {
+        "task_id": "h33",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 1,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": ""
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 2,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": ""
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h33",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "a@example.com"
+                    ],
+                    "subject": "Report",
+                    "body": "Report attached"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h34",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_get",
+                  "arguments": {
+                    "invoice_id": "I-009"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h35",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "invoice_draft",
+                  "arguments": {
+                    "customer_id": "C-1",
+                    "lines": [
+                      {
+                        "sku": "AA",
+                        "quantity": 2
+                      }
+                    ],
+                    "currency": "THB"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h36",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_cancel",
+                  "arguments": {
+                    "shipment_id": "S-019",
+                    "reason": "customer_request"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h39",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "email_send",
+                  "arguments": {
+                    "to": [
+                      "mali@example.com"
+                    ],
+                    "subject": "",
+                    "body": "นัดประชุมพรุ่งนี้"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      },
+      {
+        "task_id": "h40",
+        "repeat": 3,
+        "score": {
+          "pass": false,
+          "format_slip": false,
+          "steps": [
+            {
+              "pass": false,
+              "format_slip": false,
+              "format_errors": [],
+              "parsed_calls": [
+                {
+                  "name": "shipment_quote",
+                  "arguments": {
+                    "recipient": {
+                      "name": "สมศรี",
+                      "address": {
+                        "street": "9 ถนนสีลม",
+                        "city": "กรุงเทพฯ",
+                        "postal_code": ""
+                      }
+                    },
+                    "lines": [
+                      {
+                        "sku": "ชา",
+                        "quantity": 2
+                      }
+                    ],
+                    "service": "express"
+                  }
+                }
+              ],
+              "clarification_ok": false
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning_nonempty": 0,
+    "ended_at": "2026-10-30T15:45:55.686358+00:00"
+  }
+}
